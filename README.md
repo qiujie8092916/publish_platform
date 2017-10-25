@@ -1,1 +1,1 @@
-# publish_platform
+# Article publish platform
