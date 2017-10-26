@@ -18,7 +18,7 @@
   &:extend(.clearfix all);
 
   @media (min-width: @grid-float-breakpoint) {
-    border-radius: @navbar-border-radius;
+    border-radius: 0;//@navbar-border-radius;
   }
 }
 
@@ -460,7 +460,7 @@
       &,
       &:hover,
       &:focus {
-        background-color: @navbar-default-link-active-bg;
+        background-color: transparent;
         color: @navbar-default-link-active-color;
       }
     }

@@ -1,0 +1,131 @@
+/* nav */
+.sidebar {
+    height: 100%;
+    background: #263238;
+    transition: all .3s;
+    a {
+        display: block;
+        overflow: hidden;
+        line-height: 46px;
+        max-height: 46px;
+        color: #ABB1B7;
+        transition: all .3s;
+        &:hover, &:visited, &:active, &:focus{
+            text-decoration: none;
+        }
+    }
+    .nav-item {
+        position: relative;
+        &.nav-show {
+            border-bottom: none;
+            ul {
+                display: block;
+            }
+        }
+        ul {
+            display: none;
+            background: rgba(0, 0, 0, .1);
+            li {
+                &:hover a {
+                    color: #FFF;
+                    background: rgba(0, 0, 0, .1);
+                }
+                a {
+                    padding-left: 50px;
+                }
+            }
+        }
+        >a{
+            &:hover {
+                color: #FFF;
+                background: rgba(0, 0, 0, .1);
+                &:before {
+                    opacity: 1;
+                }
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                width: 2px;
+                height: 46px;
+                background: #34A0CE;
+                opacity: 0;
+                transition: all .3s;
+            }
+        }
+    }
+    
+    .if_d {
+        height: 46px;
+        .icon_1::after {
+            content: "\e62b";
+        }
+        .icon_2::after {
+            content: "\e669";
+        }
+        .icon_3::after {
+            content: "\e61d";
+        }
+    }
+
+    .nav-more {
+        float: right;
+        margin-right: 20px;
+        font-size: 12px;
+        transition: transform .3s;
+    }
+
+    .nav-more::after {
+        content: "\e621";
+    }
+
+    .nav-show {
+        .nav-more {
+            transform: rotate(90deg);
+        }
+    } 
+
+    &.nav-mini {
+        width: 50px;
+        .nav-icon {
+            /* margin-left:-2px; */
+        }
+        .nav-more {
+            margin-right: -20px;
+        }
+        .nav-item{
+            ul {
+                position: absolute;
+                top: 0px;
+                left: 50px;
+                width: 180px;
+                z-index: 99;
+                background: #3C474C;
+                overflow: hidden;
+                a {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+            >a {
+                padding-left: 0;
+                span {
+                    display: none;
+                }
+            }
+            &:hover {
+                background: rgba(255, 255, 255, .1);
+                .nav-item a {
+                    color: #FFF;
+                    &:before {
+                        opacity: 1;
+                    }
+                }
+                ul {
+                    display: block;
+                }
+            }
+        } 
+    }
+}

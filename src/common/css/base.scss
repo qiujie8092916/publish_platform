@@ -1,0 +1,376 @@
+/*===================================================
+  A. General/Misc Helpers
+=================================================== */
+/* overflow Helpers */
+.overflow-v { overflow: visible !important  }
+.overflow-h { overflow: hidden !important	}
+	
+/* Center Grid Column Helper */
+.center-column {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+	
+/* Vertical Align Helpers */
+.v-a-t {	vertical-align: top !important }
+.v-a-m {	vertical-align: middle !important }
+.v-a-b {	vertical-align: bottom !important }
+.v-a-s {	vertical-align: super !important }
+
+/* display Helper */
+.block { display: block !important}
+.inline-block { display: inline-block !important}
+.inline { display: inline !important}
+
+/* Position Helper */
+.relative {	position: relative !important }
+.absolute {	position: absolute !important }
+
+/* Inline Block Helper */
+.ib, .inline-object { display: inline-block !important }
+
+/* pointer cursor */
+.cursor { cursor: pointer !important }
+
+/* Useful for emphasizing a disabled input */
+.option-disabled { opacity: 0.6 }
+
+/* Text align Helper */
+.text-center { text-align: center !important }
+.text-left { text-align: left !important }
+.text-right { text-align: right !important }
+
+/* unstyled input */
+.input-unstyled,
+.input-unstyled:hover,
+.input-unstyled:focus {
+	border: none;
+	background: none;
+	box-shadow: none;
+	outline: none;
+}
+
+/*===================================================
+  B. Table Layout Helpers - specifically for widgets
+===================================================== */
+.table-layout {
+	display: table;
+	table-layout: fixed;
+	width: 100%;	
+	margin: 0;
+}
+/* table-layout helper content */
+.table-layout > div {
+	display: table-cell;
+	float: none;
+}
+@media (width: 1300px) {
+	.table-layout.table-clear-md,
+	.table-layout.table-clear-md > div {
+		display: block;
+		float: none;
+	}
+}
+@media (max-width: 992px) {
+	.table-layout.table-clear-sm,
+	.table-layout.table-clear-sm > div {
+		display: block;
+		float: none;
+	}
+}
+@media (max-width: 767px) {
+	.table-layout.table-clear-xs,
+	.table-layout.table-clear-xs > div {
+		display: block;
+		float: none;
+	}
+}
+
+/*===============================================
+  C. Font Size Helpers
+================================================= */
+.fs3 { font-size: 4px !important }
+.fs4 { font-size: 4px !important }
+.fs5 { font-size: 5px !important }
+.fs6 { font-size: 6px !important }
+.fs7 { font-size: 7px !important }
+.fs8 { font-size: 8px !important }
+.fs9 { font-size: 9px !important }
+.fs10 { font-size: 10px !important }
+.fs11 { font-size: 11px !important }
+.fs12 { font-size: 12px !important }
+.fs13 { font-size: 13px !important }
+.fs14 { font-size: 14px !important }
+.fs15 { font-size: 15px !important }
+.fs16 { font-size: 16px !important }
+.fs18 { font-size: 18px !important }
+.fs20 { font-size: 20px !important }
+.fs22 { font-size: 22px !important }
+.fs24 { font-size: 24px !important }
+.fs26 { font-size: 26px !important }
+.fs28 { font-size: 28px !important }
+.fs30 { font-size: 30px !important }
+.fs35 { font-size: 35px !important }
+.fs40 { font-size: 40px !important }
+.fs45 { font-size: 45px !important }
+.fs50 { font-size: 50px !important }
+
+/*===============================================
+  D. Padding Helpers
+================================================= */
+.pn { padding: 0 !important }
+.p1 { padding: 1px !important }
+.p2 { padding: 2px !important }
+.p3 { padding: 3px !important }
+.p4 { padding: 4px !important }
+.p5 { padding: 5px !important }
+.p6 { padding: 6px !important }
+.p7 { padding: 7px !important }
+.p8 { padding: 8px !important }
+.p10 { padding: 10px !important }
+.p15 { padding: 15px !important }
+.p20 { padding: 20px !important }
+.p25 { padding: 25px !important }
+.p30 { padding: 30px !important }
+.p35 { padding: 35px !important }
+.p40 { padding: 40px !important }
+.p50 { padding: 50px !important }
+.p55 { padding: 55px !important }
+.p60 { padding: 60px !important }
+.p65 { padding: 65px !important }
+.p70 { padding: 70px !important }
+.ptn { padding-top: 0 !important }
+.pt5 { padding-top: 5px !important }
+.pt10 { padding-top: 10px !important }
+.pt15 { padding-top: 15px !important }
+.pt20 { padding-top: 20px !important }
+.pt25 { padding-top: 25px !important }
+.pt30 { padding-top: 30px !important }
+.pt35 { padding-top: 35px !important }
+.pt40 { padding-top: 40px !important }
+.pt50 { padding-top: 50px !important }
+.pt55 { padding-top: 55px !important }
+.pt60 { padding-top: 60px !important }
+.pt65 { padding-top: 65px !important }
+.pt70 { padding-top: 70px !important }
+.prn { padding-right: 0 !important }
+.pr5 { padding-right: 5px !important }
+.pr10 { padding-right: 10px !important }
+.pr15 { padding-right: 15px !important }
+.pr20 { padding-right: 20px !important }
+.pr25 { padding-right: 25px !important }
+.pr30 { padding-right: 30px !important }
+.pr35 { padding-right: 35px !important }
+.pr40 { padding-right: 40px !important }
+.pr50 { padding-right: 50px !important }
+.pr55 { padding-right: 55px !important }
+.pr60 { padding-right: 60px !important }
+.pr65 { padding-right: 65px !important }
+.pr70 { padding-right: 70px !important }
+.pbn { padding-bottom: 0 !important }
+.pb5 { padding-bottom: 5px !important }
+.pb10 { padding-bottom: 10px !important }
+.pb15 { padding-bottom: 15px !important }
+.pb20 { padding-bottom: 20px !important }
+.pb25 { padding-bottom: 25px !important }
+.pb30 { padding-bottom: 30px !important }
+.pb35 { padding-bottom: 35px !important }
+.pb40 { padding-bottom: 40px !important }
+.pb45 { padding-bottom: 45px !important }
+.pb50 { padding-bottom: 50px !important }
+.pb55 { padding-bottom: 55px !important }
+.pb60 { padding-bottom: 60px !important }
+.pb65 { padding-bottom: 65px !important }
+.pb70 { padding-bottom: 70px !important }
+.pln { padding-left: 0 !important }
+.pl5 { padding-left: 5px !important }
+.pl10 { padding-left: 10px !important }
+.pl15 { padding-left: 15px !important }
+.pl20 { padding-left: 20px !important }
+.pl25 { padding-left: 25px !important }
+.pl30 { padding-left: 30px !important }
+.pl35 { padding-left: 35px !important }
+.pl40 { padding-left: 40px !important }
+.pl45 { padding-left: 45px !important }
+.pl50 { padding-left: 50px !important }
+.pl55 { padding-left: 55px !important }
+.pl60 { padding-left: 60px !important }
+.pl65 { padding-left: 65px !important }
+.pl70 { padding-left: 70px !important }
+
+/*===============================================
+  E. Margin Helpers
+================================================= */
+.mn { margin: 0 !important }
+.m1 { margin: 1px !important }
+.m2 { margin: 2px !important }
+.m3 { margin: 3px !important }
+.m4 { margin: 4px !important }
+.m5 { margin: 5px !important }
+.m8 { margin: 8px !important }
+.m10 { margin: 10px !important }
+.m15 { margin: 15px !important }
+.m20 { margin: 20px !important }
+.m25 { margin: 25px !important }
+.m30 { margin: 30px !important }
+.m35 { margin: 35px !important }
+.m40 { margin: 40px !important }
+.m50 { margin: 50px !important }
+.mtn { margin-top: 0 !important }
+.mt5 { margin-top: 5px !important }
+.mt10 { margin-top: 10px !important }
+.mt15 { margin-top: 15px !important }
+.mt20 { margin-top: 20px !important }
+.mt25 { margin-top: 25px !important }
+.mt30 { margin-top: 30px !important }
+.mt35 { margin-top: 35px !important }
+.mt40 { margin-top: 40px !important }
+.mt50 { margin-top: 50px !important }
+.mrn { margin-right: 0 !important }
+.mr5 { margin-right: 5px !important }
+.mr10 { margin-right: 10px !important }
+.mr15 { margin-right: 15px !important }
+.mr20 { margin-right: 20px !important }
+.mr25 { margin-right: 25px !important }
+.mr30 { margin-right: 30px !important }
+.mr35 { margin-right: 35px !important }
+.mr40 { margin-right: 40px !important }
+.mr50 { margin-right: 50px !important }
+.mbn { margin-bottom: 0 !important }
+.mb5 { margin-bottom: 5px !important }
+.mb10 { margin-bottom: 10px !important }
+.mb15 { margin-bottom: 15px !important }
+.mb20 { margin-bottom: 20px !important }
+.mb25 { margin-bottom: 25px !important }
+.mb30 { margin-bottom: 30px !important }
+.mb35 { margin-bottom: 35px !important }
+.mb40 { margin-bottom: 40px !important }
+.mb50 { margin-bottom: 50px !important }
+.mln { margin-left: 0 !important }
+.ml5 { margin-left: 5px !important }
+.ml10 { margin-left: 10px !important }
+.ml15 { margin-left: 15px !important }
+.ml20 { margin-left: 20px !important }
+.ml25 { margin-left: 25px !important }
+.ml30 { margin-left: 30px !important }
+.ml35 { margin-left: 35px !important }
+.ml40 { margin-left: 40px !important }
+.ml50 { margin-left: 50px !important }
+
+/*===============================================
+  F. LineHeight Helpers
+================================================= */
+.lh0 { line-height: 0 !important; }
+.lh5 { line-height: 5px !important; }
+.lh10 { line-height: 10px !important; }
+.lh15 { line-height: 15px !important; }
+.lh20 { line-height: 20px !important; }
+.lh25 { line-height: 25px !important; }
+.lh30 { line-height: 30px !important; }
+.lh35 { line-height: 35px !important; }
+.lh40 { line-height: 40px !important; }
+.lh45 { line-height: 45px !important; }
+.lh50 { line-height: 50px !important; }
+.lh55 { line-height: 55px !important; }
+.lh60 { line-height: 60px !important; }
+
+/*===============================================
+  G. Border Helpers
+================================================= */
+/* Border Radius */
+.br0 { border-radius: 0px !important }
+.br1 { border-radius: 1px !important }
+.br2 { border-radius: 2px !important }
+.br3 { border-radius: 3px !important }
+.br4 { border-radius: 4px !important }
+.br6 { border-radius: 6px !important }
+.br8 { border-radius: 8px !important }
+.br12 { border-radius: 12px !important }
+.br24 { border-radius: 24px !important }
+.br64 { border-radius: 64px !important } /* circle */
+
+/* Border Width */
+.bw1 { border-width: 1px !important }
+.bw2 { border-width: 2px !important }
+.bw3 { border-width: 3px !important }
+.bw4 { border-width: 4px !important }
+.bw5 { border-width: 5px !important }
+
+/* Disable Border */
+.border-left-none { border-left: none !important }
+.border-right-none { border-right: none !important }
+.border-top-none { border-top: none !important }
+.border-bottom-none { border-bottom: none !important }
+.border-none { border: none !important }
+
+/*===============================================
+  H. Max Width Helpers
+================================================= */
+.mw10 { max-width: 10px !important }
+.mw20 { max-width: 20px !important }
+.mw30 { max-width: 30px !important }
+.mw35 { max-width: 35px !important }
+.mw40 { max-width: 40px !important }
+.mw45 { max-width: 45px !important }
+.mw50 { max-width: 50px !important }
+.mw60 { max-width: 60px !important }
+.mw80 { max-width: 80px !important }
+.mw100 { max-width: 100px !important }
+.mw140 { max-width: 140px !important }
+.mw160 { max-width: 160px !important }
+.mw180 { max-width: 180px !important }
+.mw200 { max-width: 200px !important }
+.mw240 { max-width: 240px !important }
+.mw280 { max-width: 280px !important }
+.mw320 { max-width: 320px !important }
+
+/*===============================================
+  I. Width Helpers
+================================================= */
+.wd10 { width: 10px !important }
+.wd20 { width: 20px !important }
+.wd30 { width: 30px !important }
+.wd35 { width: 35px !important }
+.wd40 { width: 40px !important }
+.wd45 { width: 45px !important }
+.wd50 { width: 50px !important }
+.wd55 { width: 55px !important }
+.wd60 { width: 60px !important }
+.wd65 { width: 65px !important }
+.wd70 { width: 70px !important }
+.wd75 { width: 75px !important }
+.wd80 { width: 80px !important }
+.wd100 { width: 100px !important }
+.wd140 { width: 140px !important }
+.wd160 { width: 160px !important }
+.wd180 { width: 180px !important }
+.wd200 { width: 200px !important }
+.wd240 { width: 240px !important }
+.wd280 { width: 280px !important }
+.wd320 { width: 320px !important }
+
+/*===============================================
+  J. Height Helpers
+================================================= */
+.ht10 { height: 10px !important }
+.ht20 { height: 20px !important }
+.ht30 { height: 30px !important }
+.ht35 { height: 35px !important }
+.ht40 { height: 40px !important }
+.ht45 { height: 45px !important }
+.ht50 { height: 50px !important }
+.ht60 { height: 60px !important }
+.ht65 { height: 65px !important }
+.ht70 { height: 70px !important }
+.ht75 { height: 75px !important }
+.ht80 { height: 80px !important }
+.ht100 { height: 100px !important }
+.ht140 { height: 140px !important }
+.ht160 { height: 160px !important }
+.ht180 { height: 180px !important }
+.ht200 { height: 200px !important }
+.ht240 { height: 240px !important }
+.ht280 { height: 280px !important }
+.ht320 { height: 320px !important }
